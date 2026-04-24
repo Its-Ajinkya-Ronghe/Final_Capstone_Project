@@ -1,13 +1,13 @@
 pipeline {
     agent any
 
-
     tools {
-            maven 'maven'
-        }
+        maven 'maven'
+    }
 
     stages {
-        stage('Clone Code') {
+
+        stage('Checkout Code') {
             steps {
                 git branch: 'main',
                     url: 'https://github.com/Its-Ajinkya-Ronghe/Final_Capstone_Project.git'
@@ -16,14 +16,36 @@ pipeline {
 
         stage('Build') {
             steps {
-                bat 'mvn clean install'
+                bat "mvn clean install -DskipTests"
             }
         }
 
-        stage('Test') {
+        stage('Run Tests') {
             steps {
-                bat 'mvn test'
+                bat "mvn test"
             }
+        }
+
+        stage('Run JMeter Load Tests') {
+            steps {
+                bat "mvn verify -P jmeter-tests"
+            }
+        }
+
+        stage('Generate Allure Report') {
+            steps {
+                allure([
+                    reportBuildPolicy: 'ALWAYS',
+                    results: [[path: 'target/allure-results']]
+                ])
+            }
+        }
+
+    }
+
+    post {
+        always {
+            echo "Pipeline Completed"
         }
     }
 }
