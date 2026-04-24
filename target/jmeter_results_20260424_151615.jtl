@@ -1,0 +1,11 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1777023980103,1039,GET Account Details,200,OK,API Users 1-1,text,true,,413,215,4,4,https://parabank.parasoft.com/parabank/services/bank/accounts/17673,1021,0,680
+1777023980329,814,GET Account Details,200,OK,API Users 1-2,text,true,,413,215,4,4,https://parabank.parasoft.com/parabank/services/bank/accounts/17673,796,0,446
+1777023980736,407,GET Account Details,200,OK,API Users 1-3,text,true,,413,215,4,4,https://parabank.parasoft.com/parabank/services/bank/accounts/17673,389,0,102
+1777023981153,269,GET Customer Details,400,Bad Request,API Users 1-2,text,false,,288,216,4,4,https://parabank.parasoft.com/parabank/services/bank/customers/17673,269,0,0
+1777023981152,270,GET Customer Details,400,Bad Request,API Users 1-1,text,false,,288,216,4,4,https://parabank.parasoft.com/parabank/services/bank/customers/17673,270,0,0
+1777023981158,264,GET Customer Details,400,Bad Request,API Users 1-3,text,false,,288,216,4,4,https://parabank.parasoft.com/parabank/services/bank/customers/17673,264,0,0
+1777023981128,560,GET Account Details,200,OK,API Users 1-4,text,true,,413,215,2,2,https://parabank.parasoft.com/parabank/services/bank/accounts/17673,559,0,75
+1777023981522,366,GET Account Details,200,OK,API Users 1-5,text,true,,413,215,2,2,https://parabank.parasoft.com/parabank/services/bank/accounts/17673,366,0,94
+1777023981689,252,GET Customer Details,400,Bad Request,API Users 1-4,text,false,,288,216,2,2,https://parabank.parasoft.com/parabank/services/bank/customers/17673,252,0,0
+1777023981889,274,GET Customer Details,400,Bad Request,API Users 1-5,text,false,,288,216,1,1,https://parabank.parasoft.com/parabank/services/bank/customers/17673,273,0,0

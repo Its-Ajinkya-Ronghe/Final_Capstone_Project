@@ -1,0 +1,34 @@
+{
+  "Total" : {
+    "transaction" : "Total",
+    "sampleCount" : 5,
+    "errorCount" : 5,
+    "errorPct" : 100.0,
+    "meanResTime" : 1216.4,
+    "medianResTime" : 1275.0,
+    "minResTime" : 876.0,
+    "maxResTime" : 1492.0,
+    "pct1ResTime" : 1492.0,
+    "pct2ResTime" : 1492.0,
+    "pct3ResTime" : 1492.0,
+    "throughput" : 2.8457598178713717,
+    "receivedKBytesPerSec" : 1.178322424587365,
+    "sentKBytesPerSec" : 0.39184778742174164
+  },
+  "ParaBank Login API" : {
+    "transaction" : "ParaBank Login API",
+    "sampleCount" : 5,
+    "errorCount" : 5,
+    "errorPct" : 100.0,
+    "meanResTime" : 1216.4,
+    "medianResTime" : 1275.0,
+    "minResTime" : 876.0,
+    "maxResTime" : 1492.0,
+    "pct1ResTime" : 1492.0,
+    "pct2ResTime" : 1492.0,
+    "pct3ResTime" : 1492.0,
+    "throughput" : 2.8457598178713717,
+    "receivedKBytesPerSec" : 1.178322424587365,
+    "sentKBytesPerSec" : 0.39184778742174164
+  }
+}

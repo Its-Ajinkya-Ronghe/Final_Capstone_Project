@@ -1,0 +1,6 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1777020791433,876,ParaBank Login API,400,Bad Request,UI Load Users 1-4,text,false,,424,141,5,5,https://parabank.parasoft.com/parabank/login.htm,865,0,563
+1777020791036,1275,ParaBank Login API,400,Bad Request,UI Load Users 1-1,text,false,,424,141,5,5,https://parabank.parasoft.com/parabank/login.htm,1262,0,981
+1777020791036,1275,ParaBank Login API,400,Bad Request,UI Load Users 1-2,text,false,,424,141,5,5,https://parabank.parasoft.com/parabank/login.htm,1262,0,978
+1777020791228,1492,ParaBank Login API,400,Bad Request,UI Load Users 1-3,text,false,,424,141,2,2,https://parabank.parasoft.com/parabank/login.htm,1491,0,773
+1777020791629,1164,ParaBank Login API,400,Bad Request,UI Load Users 1-5,text,false,,424,141,1,1,https://parabank.parasoft.com/parabank/login.htm,1164,0,383
