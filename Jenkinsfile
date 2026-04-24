@@ -7,16 +7,15 @@ pipeline {
 
     stages {
 
-        stage('Checkout Code') {
+        stage('Checkout') {
             steps {
-                git branch: 'main',
-                    url: 'https://github.com/Its-Ajinkya-Ronghe/Final_Capstone_Project.git'
+                checkout scm
             }
         }
 
         stage('Build') {
             steps {
-                bat "mvn clean install -DskipTests"
+                bat "mvn clean install"
             }
         }
 
@@ -26,26 +25,19 @@ pipeline {
             }
         }
 
-        stage('Run JMeter Load Tests') {
+        stage('Run JMeter') {
             steps {
-                bat "mvn verify -P jmeter-tests"
+                bat "mvn verify"
             }
         }
 
-        stage('Generate Allure Report') {
+        stage('Allure Report') {
             steps {
                 allure([
                     reportBuildPolicy: 'ALWAYS',
                     results: [[path: 'target/allure-results']]
                 ])
             }
-        }
-
-    }
-
-    post {
-        always {
-            echo "Pipeline Completed"
         }
     }
 }
