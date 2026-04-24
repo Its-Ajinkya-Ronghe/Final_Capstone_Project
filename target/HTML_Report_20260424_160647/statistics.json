@@ -1,0 +1,34 @@
+{
+  "GET Account Details" : {
+    "transaction" : "GET Account Details",
+    "sampleCount" : 5,
+    "errorCount" : 0,
+    "errorPct" : 0.0,
+    "meanResTime" : 710.2,
+    "medianResTime" : 737.0,
+    "minResTime" : 314.0,
+    "maxResTime" : 1380.0,
+    "pct1ResTime" : 1380.0,
+    "pct2ResTime" : 1380.0,
+    "pct3ResTime" : 1380.0,
+    "throughput" : 2.895193977996526,
+    "receivedKBytesPerSec" : 1.145071837000579,
+    "sentKBytesPerSec" : 0.6078776418645049
+  },
+  "Total" : {
+    "transaction" : "Total",
+    "sampleCount" : 5,
+    "errorCount" : 0,
+    "errorPct" : 0.0,
+    "meanResTime" : 710.2,
+    "medianResTime" : 737.0,
+    "minResTime" : 314.0,
+    "maxResTime" : 1380.0,
+    "pct1ResTime" : 1380.0,
+    "pct2ResTime" : 1380.0,
+    "pct3ResTime" : 1380.0,
+    "throughput" : 2.895193977996526,
+    "receivedKBytesPerSec" : 1.145071837000579,
+    "sentKBytesPerSec" : 0.6078776418645049
+  }
+}

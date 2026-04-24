@@ -1,20 +1,22 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
-                             http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
 
-    <!-- ADDED because parent was removed -->
-    <groupId>com.parallel.grid</groupId>
+    <parent>
+        <groupId>com.parallel.grid</groupId>
+        <artifactId>Final_Internship_Projects</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
     <artifactId>para_bank</artifactId>
-    <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <!-- ================= DEPENDENCIES ================= -->
     <dependencies>
 
-        <!-- Selenium -->
+        <!-- Selenium (ONLY ONE VERSION) -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
@@ -101,9 +103,12 @@
                 </executions>
 
                 <configuration>
+                    <!-- IMPORTANT: your file location -->
                     <testFilesIncluded>
                         <jMeterTestFile>jmeter/LoadTest.jmx</jMeterTestFile>
                     </testFilesIncluded>
+
+                    <!-- Reports -->
                     <resultsDirectory>target/jmeter/results</resultsDirectory>
                     <generateReports>true</generateReports>
                 </configuration>

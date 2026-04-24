@@ -1,0 +1,1 @@
+{"uuid":"be369d04-72e0-4f72-b90f-2649473a6592","name":"Default Suite","children":["83d4127e-9d12-47d7-beb8-15f7b2ef714e"],"befores":[],"afters":[{"name":"executeJMeterCLI","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1777037110168,"stop":1777037120718}],"start":1777037020350,"stop":1777037120719}
