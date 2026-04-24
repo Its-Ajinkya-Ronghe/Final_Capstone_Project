@@ -34,10 +34,7 @@ pipeline {
         stage('Allure Report') {
             steps {
                 script {
-                    // This 'Allure' inside the tool() function MUST match
-                    // the Name you typed in Jenkins Global Tool Configuration
-                    def allureHome = tool name: 'Allure', type: 'io.qameta.allure.jenkins.tools.AllureCommandlineInstallation'
-
+                    // The name 'Allure' here must match the Name field in Manage Jenkins -> Tools
                     allure includeProperties: false,
                            jdk: '',
                            results: [[path: 'target/allure-results']]
